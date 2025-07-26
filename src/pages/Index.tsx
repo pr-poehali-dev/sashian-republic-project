@@ -74,7 +74,7 @@ const Index = () => {
               <Card className="border border-gray-300">
                 <div className="bg-gray-100 p-4 border-b">
                   <h3 className="font-bold text-center">Сашианийская Республика</h3>
-                  <p className="text-sm text-center text-gray-600 italic">Sasaniian Republic</p>
+                  <p className="text-sm text-center text-gray-600 italic">Sashianian Republic</p>
                 </div>
                 <div className="p-4">
                   {/* Flag */}
@@ -91,7 +91,12 @@ const Index = () => {
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between">
                       <span className="font-semibold">Столица:</span>
-                      <span className="text-blue-600">Асхиния</span>
+                      <button 
+                        onClick={() => scrollToSection('social')}
+                        className="text-blue-600 hover:underline cursor-pointer"
+                      >
+                        Асхиния
+                      </button>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-semibold">Население:</span>
@@ -130,19 +135,31 @@ const Index = () => {
                 <h2 className="text-2xl font-bold mb-4 border-b border-gray-300 pb-2">1. Общие сведения</h2>
                 <p className="mb-4">
                   <strong>Сашианийская Республика</strong> — суверенное государство, расположенное на северо-западе материка Альвания. 
-                  Это одна из наиболее развитых стран региона, известная высокими технологиями, динамичной экономикой и активной внешней политикой.
+                  Это одна из наиболее развитых стран региона, известная высокими технологиями и динамичной экономикой.
                 </p>
                 
                 <div className="grid grid-cols-2 gap-4 my-6">
                   <div>
                     <h4 className="font-bold mb-2">Основные данные:</h4>
                     <ul className="space-y-1 text-sm">
+                      <li><strong>Полное название:</strong> Сашианийская Республика</li>
                       <li><strong>Форма правления:</strong> Президентская республика</li>
                       <li><strong>Государственный строй:</strong> Федерация</li>
+                      <li><strong>Глава государства:</strong> Президент Карл Маркес</li>
+                      <li><strong>Глава правительства:</strong> Премьер-министр Лилия Вест</li>
+                      <li><strong>Столица:</strong> Асхиния</li>
                       <li><strong>Официальный язык:</strong> Сашианийский</li>
-                      <li><strong>Часовой пояс:</strong> AST (UTC+3)</li>
+                      <li><strong>Валюта:</strong> Сашин (SHN)</li>
+                      <li><strong>Часовой пояс:</strong> AST — UTC+3</li>
+                      <li><strong>Площадь:</strong> ~92,400 км²</li>
+                      <li><strong>Население:</strong> 23,8 млн (на 2025 год)</li>
+                      <li><strong>Дата независимости:</strong> 15 августа 1948 года</li>
+                      <li><strong>Названия жителей:</strong> сашианиец, сашианийка, сашианийцы</li>
                       <li><strong>Интернет-домен:</strong> .sh</li>
-                      <li><strong>Телефонный код:</strong> +47</li>
+                      <li><strong>Код ISO:</strong> SH (двухбуквенный), SAH (трёхбуквенный)</li>
+                      <li><strong>Код МОК:</strong> SAH</li>
+                      <li><strong>Телефонный код:</strong> +47 (региональная зона Альвании)</li>
+                      <li><strong>Автомобильное движение:</strong> правостороннее</li>
                     </ul>
                   </div>
                   <div>
